@@ -1,59 +1,68 @@
+package my.board;
 
 public class User {
-
 	
-	private String userid;
-	private String username;
-	private String userpassword;
-	private int userage;
+	private String userID;
+	private String userName;
+	private String userPassword;
+	private int userAge;
 	private String useremail;
 	
-	public User(String userid, String username, String userpassword, int userage, String useremail) {
+	public User() {
+		
+	}
 	
-		this.userid = userid;
-		this.username = username;
-		this.userpassword = userpassword;
-		this.userage = userage;
-		this.useremail = useremail;
+	public User(String userID, String userName, String userPassword, int userAge, String email) {
+		super();
+		this.userID = userID;
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.userAge = userAge;
+		this.useremail = email;
 	}
-	public String getUserid() {
-		return userid;
+
+	public String getUserID() {
+		return userID;
 	}
-	public void setUserid(String userid) {
-		this.userid = userid;
+
+	public void setUserID(String userID) {
+		this.userID = userID;
 	}
-	public String getUsername() {
-		return username;
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getUserpassword() {
-		return userpassword;
+
+	public String getUserPassword() {
+		return userPassword;
 	}
-	public void setUserpassword(String userpassword) {
-		this.userpassword = userpassword;
+
+	public void setUserPassword(String userPassword) {
+		this.userPassword = userPassword;
 	}
-	public int getUserage() {
-		return userage;
+
+	public int getUserAge() {
+		return userAge;
 	}
-	public void setUserage(int userage) {
-		this.userage = userage;
+
+	public void setUserAge(int userAge) {
+		this.userAge = userAge;
 	}
-	public String getUseremail() {
+
+	public String getUserEmail() {
 		return useremail;
 	}
-	public void setUseremail(String useremail) {
-		this.useremail = useremail;
+
+	public void setUserEmail(String email) {
+		this.useremail = email;
 	}
+
 
 	
 	
-	
-	
-	
-	
-	
-	
-	
+
 }
